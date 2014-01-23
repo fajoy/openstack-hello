@@ -1,0 +1,16 @@
+[DEFAULT]
+debug=True
+hello_listen=0.0.0.0
+hello_listen_port=10001
+hello_workers=1
+#api_paste_config=/etc/hello/api-paste.ini
+
+
+[keystone_authtoken]
+auth_host=127.0.0.1
+auth_port=35357
+auth_protocol=http
+admin_user=
+admin_password=
+admin_tenant_name=
+
