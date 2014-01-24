@@ -1,9 +1,7 @@
 import os
 from oslo.config import cfg
-from hello.openstack.common import service
 import logging
 from hello import wsgi
-
 
 LOG = logging.getLogger(__name__)
 
@@ -19,7 +17,6 @@ service_opts = [
 ]
 CONF = cfg.CONF
 CONF.register_opts(service_opts)
-
 
 class WSGIService(object):
     """Provides ability to launch API from a 'paste' configuration."""
