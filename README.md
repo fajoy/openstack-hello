@@ -1,7 +1,7 @@
 openstack-hello
 ===============
 
-pip install Paste python-openstackclient
+pip install Paste python-openstackclient stevedore
 git clone https://github.com/openstack/oslo-incubator.git
 mkdir hello helloclient
 cd oslo-incubator/

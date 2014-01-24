@@ -1,6 +1,6 @@
 from helloclient.openstack.common import cliutils as utils
 def do_list(hc, args):
-    """Show details about a volume."""
+    """Show list worlds."""
     columns = [
             "ID",
             'Name',
