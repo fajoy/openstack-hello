@@ -1,15 +1,7 @@
 from helloclient.openstack.common.apiclient import base
-try:
-    from urllib import urlencode
-except ImportError:
-    from urllib.parse import urlencode
-import six
-
-
 class WorldSet(base.Resource):
     def __repr__(self):
         return "<World: %s>" % self.id
-
 
 class WorldSetManager(base.ManagerWithFind):
     resource_class = WorldSet
@@ -18,7 +10,7 @@ class WorldSetManager(base.ManagerWithFind):
         """
         Get a world.
 
-        :param world_id: The ID of the world to delete.
+        :param world_id: The ID of the world.
         :rtype: :class:`World`
         """
         return self._get("/worlds/%s" % world_id, "world")
