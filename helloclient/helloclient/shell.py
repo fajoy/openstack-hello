@@ -9,12 +9,9 @@ if __name__ == '__main__' and __package__ is None:
 import sys
 import argparse
 import logging
-import re
 import sys
 
-import helloclient.openstack.common.apiclient.auth 
 from helloclient.openstack.common.apiclient import auth
-
 from keystoneclient.v2_0 import client as ksclient
 from helloclient.openstack.common import cliutils as utils
 from helloclient.openstack.common import strutils
@@ -227,7 +224,6 @@ def main():
     except Exception as e:
         print >> sys.stderr, e
         sys.exit(1)
-
 
 if __name__=="__main__":
     main()
